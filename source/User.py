@@ -1,3 +1,7 @@
+# File: User.py
+# -------------
+# This class defines User object.
+
 class User(object):
 
     # Constructor
@@ -29,6 +33,7 @@ class User(object):
     def addFriend(self, friend):
         self.friendList.append(friend)
         friend.receiveFriend(self)
-
+    
+    # Method for receiving friend request
     def receiveFriend(self, friend):
         self.friendList.append(friend)
